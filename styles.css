@@ -1,0 +1,35 @@
+.content {
+  width: 100%;
+  }
+
+img  { 
+  margin-right: auto;
+  padding-bottom: 5px;
+  width: 100%;
+} 
+
+table, td {
+  border: solid 1px lightgray;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  background-color: aliceblue;
+  border-bottom: solid 10px lightgray;
+  margin-bottom: 15px;
+  padding: 2px;
+}
+
+.med{ font-size: medium };
+.large{ font-size: large }; 
+.x-large{ font-size: x-large };
+.xx-large{ font-size: xx-large };
+
+.col1 { width: 10% }
+.col2 { width: 60% }
+.col3 { width: 30% }
+
