@@ -1,12 +1,17 @@
 .content {
   width: 100%;
-  }
+}
 
 img  { 
   margin-right: auto;
   padding-bottom: 5px;
   width: 100%;
 } 
+
+img:hover {
+  width: 110%;
+  transition: 1s;
+}
 
 table, td {
   border: solid 1px lightgray;
@@ -24,12 +29,51 @@ td {
   padding: 2px;
 }
 
-.med{ font-size: medium };
-.large{ font-size: large }; 
-.x-large{ font-size: x-large };
-.xx-large{ font-size: xx-large };
+.l { font-size: large }
+.xl { font-size: x-large; background-color: rgb(218, 235, 193)}
+.xxl1 {font-size: xx-large; background-color: rgb(183, 127, 236)}
 
 .col1 { width: 10% }
 .col2 { width: 60% }
 .col3 { width: 30% }
 
+.anim1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 3s;
+}
+
+.anim1:hover {
+  background-color: rgb(183, 255, 0);
+  transition: 1s;
+}
+
+
+
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  
+  .col1 { width: 20% }
+  .col2 { width: 57% }
+  .col3 { width: 32% }
+
+  .xl {
+    font-size:small;
+    background-color: rgb(208, 246, 243);
+  }
+
+} 
